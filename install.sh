@@ -3,9 +3,10 @@
 sudo apt update -y
 
 cd
-sudo apt install python
+sudo apt install python python3
 curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 sudo python get-pip.py
+sudo python3 get-pip.py
 cd
 rm -rf get-pip.py
 
@@ -20,8 +21,10 @@ zinit self-update
 zinit light zdharma/fast-syntax-highlighting
 zinit light paulirish/git-open
 
+
 # powerline
 cd
+pip install --user powerline-shell
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 chmod +x install.sh

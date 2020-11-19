@@ -13,6 +13,11 @@ zinit self-update
 zinit light zdharma/fast-syntax-highlighting
 zinit light paulirish/git-open
 
+
+#pip
+sudo apt install -y python-pip
+pip install --user powerline-shell
+
 # powerline
 cd
 git clone https://github.com/powerline/fonts.git --depth=1

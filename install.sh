@@ -10,10 +10,6 @@ sudo python3 get-pip.py
 cd
 rm -rf get-pip.py
 
-# zsh
-sudo apt install zsh -y
-chsh -s /usr/bin/zsh
-exec $SHELL -l
 
 cd
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"

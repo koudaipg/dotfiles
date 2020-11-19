@@ -14,9 +14,6 @@ rm -rf get-pip.py
 cd
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 source ~/.zshrc
-zinit self-update
-zinit light zdharma/fast-syntax-highlighting
-zinit light paulirish/git-open
 
 
 # powerline

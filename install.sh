@@ -1,5 +1,5 @@
 #!/bin/sh
-
+cd
 sudo apt update -y
 
 cd
@@ -13,6 +13,7 @@ rm -rf get-pip.py
 # zsh
 sudo apt install zsh -y
 chsh -s /usr/bin/zsh
+exec $SHELL -l
 
 cd
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
@@ -25,6 +26,7 @@ zinit light paulirish/git-open
 # powerline
 cd
 pip install --user powerline-shell
+source ~/.zshrc
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 chmod +x install.sh

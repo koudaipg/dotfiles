@@ -2,6 +2,13 @@
 
 sudo apt update -y
 
+cd
+sudo apt install python
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+sudo python get-pip.py
+cd
+rm -rf get-pip.py
+
 # zsh
 sudo apt install zsh -y
 chsh -s /usr/bin/zsh
@@ -12,11 +19,6 @@ source ~/.zshrc
 zinit self-update
 zinit light zdharma/fast-syntax-highlighting
 zinit light paulirish/git-open
-
-
-#pip
-sudo apt install -y python-pip
-pip install --user powerline-shell
 
 # powerline
 cd
